@@ -62,198 +62,384 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════
-       bday cake!!
-  ══════════════════════════════════════ -->
-  <section class="cake-section" id="cake">
-    <div class="section-header">
-      <h2 class="section-title">Make a wish!</h2>
-      <p class="section-subtitle">pssst - click each flame to blow out your candles ⋆˚✰ ݁˖⭑.</p>
-    </div>
+ <!-- ✦ prettier magical birthday cake -->
+<section class="cake-section" id="cake">
+  <div class="section-header">
+    <h2 class="section-title">Make a wish!</h2>
+    <p class="section-subtitle">
+      pssst - click each flame to blow out your candles ⋆˚✰ ݁˖⭑.
+    </p>
+  </div>
 
-    <div class="cake-scene" id="cakeScene">
-      <svg class="cake-svg" id="cakeSvg" viewBox="0 0 340 300" xmlns="http://www.w3.org/2000/svg" aria-label="bday cake :3">
-        <defs>
-          <linearGradient id="tier3grad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#1e3480"/><stop offset="100%" stop-color="#0d1a55"/>
-          </linearGradient>
-          <linearGradient id="tier2grad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#22387a"/><stop offset="100%" stop-color="#111f58"/>
-          </linearGradient>
-          <linearGradient id="tier1grad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#263c82"/><stop offset="100%" stop-color="#14224e"/>
-          </linearGradient>
-          <linearGradient id="frostgrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#e8f4ff"/><stop offset="100%" stop-color="#9ac4ee"/>
-          </linearGradient>
-          <linearGradient id="candle1grad" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stop-color="#d880e8"/><stop offset="100%" stop-color="#9040b8"/>
-          </linearGradient>
-          <linearGradient id="candle2grad" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stop-color="#60d0f0"/><stop offset="100%" stop-color="#2890b8"/>
-          </linearGradient>
-          <linearGradient id="candle3grad" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stop-color="#f8e070"/><stop offset="100%" stop-color="#d0a030"/>
-          </linearGradient>
-          <linearGradient id="candle4grad" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stop-color="#f08080"/><stop offset="100%" stop-color="#c04040"/>
-          </linearGradient>
-          <linearGradient id="candle5grad" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stop-color="#80e8a8"/><stop offset="100%" stop-color="#38a860"/>
-          </linearGradient>
-          <radialGradient id="flame0grad" cx="50%" cy="65%" r="50%">
-            <stop offset="0%" stop-color="#fff0a0"/><stop offset="60%" stop-color="#ffaa00"/><stop offset="100%" stop-color="#ff5500" stop-opacity="0"/>
-          </radialGradient>
-          <radialGradient id="flame1grad" cx="50%" cy="65%" r="50%">
-            <stop offset="0%" stop-color="#c0eeff"/><stop offset="60%" stop-color="#4080ff"/><stop offset="100%" stop-color="#0020cc" stop-opacity="0"/>
-          </radialGradient>
-          <radialGradient id="flame2grad" cx="50%" cy="65%" r="50%">
-            <stop offset="0%" stop-color="#ffffc0"/><stop offset="60%" stop-color="#ffcc00"/><stop offset="100%" stop-color="#ff8800" stop-opacity="0"/>
-          </radialGradient>
-          <radialGradient id="flame3grad" cx="50%" cy="65%" r="50%">
-            <stop offset="0%" stop-color="#ffd0e0"/><stop offset="60%" stop-color="#ff5080"/><stop offset="100%" stop-color="#cc0040" stop-opacity="0"/>
-          </radialGradient>
-          <radialGradient id="flame4grad" cx="50%" cy="65%" r="50%">
-            <stop offset="0%" stop-color="#c0ffc0"/><stop offset="60%" stop-color="#30cc60"/><stop offset="100%" stop-color="#008830" stop-opacity="0"/>
-          </radialGradient>
-          <filter id="candleGlow">
-            <feGaussianBlur stdDeviation="3" result="blur"/>
-            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-          </filter>
-        </defs>
+  <div class="cake-scene" id="cakeScene">
 
-        <!-- plate shadow -->
-        <ellipse cx="170" cy="280" rx="128" ry="12" fill="rgba(0,20,80,0.5)"/>
+    <svg
+      class="cake-svg"
+      id="cakeSvg"
+      viewBox="0 0 340 300"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="birthday cake"
+    >
 
-        <!-- ── TIER 3 (bottom) ── -->
-        <!-- side highlight -->
-        <rect x="40" y="202" width="260" height="68" rx="8" fill="url(#tier3grad)"/>
-        <rect x="40" y="202" width="8" height="68" rx="4" fill="rgba(255,255,255,0.04)"/>
-        <!-- frosting top -->
-        <rect x="40" y="196" width="260" height="14" rx="6" fill="url(#frostgrad)"/>
-        <!-- frosting drips -->
-        <path d="M75,210 Q80,226 75,238" stroke="rgba(210,235,255,0.55)" stroke-width="7" stroke-linecap="round" fill="none"/>
-        <path d="M120,210 Q128,230 121,244" stroke="rgba(210,235,255,0.55)" stroke-width="6" stroke-linecap="round" fill="none"/>
-        <path d="M172,210 Q179,232 172,244" stroke="rgba(210,235,255,0.55)" stroke-width="7" stroke-linecap="round" fill="none"/>
-        <path d="M224,210 Q231,228 224,240" stroke="rgba(210,235,255,0.55)" stroke-width="6" stroke-linecap="round" fill="none"/>
-        <path d="M270,210 Q276,224 270,236" stroke="rgba(210,235,255,0.55)" stroke-width="5" stroke-linecap="round" fill="none"/>
-        <!-- decorative dots on tier 3 -->
-        <circle cx="100" cy="228" r="3" fill="rgba(125,232,240,0.5)"/>
-        <circle cx="145" cy="238" r="2.5" fill="rgba(200,160,230,0.55)"/>
-        <circle cx="200" cy="228" r="3" fill="rgba(125,232,240,0.5)"/>
-        <circle cx="248" cy="236" r="2.5" fill="rgba(240,216,132,0.55)"/>
-        <!-- star decoration tier 3 -->
-        <polygon points="170,220 172,226 178,226 173,230 175,236 170,232 165,236 167,230 162,226 168,226" fill="rgba(125,232,240,0.4)" transform="scale(0.7) translate(73,100)"/>
+      <defs>
 
-        <!-- ── TIER 2 (middle) ── -->
-        <rect x="76" y="142" width="188" height="58" rx="7" fill="url(#tier2grad)"/>
-        <rect x="76" y="142" width="7" height="58" rx="3" fill="rgba(255,255,255,0.04)"/>
-        <rect x="76" y="136" width="188" height="13" rx="5" fill="url(#frostgrad)"/>
-        <!-- drips -->
-        <path d="M105,149 Q111,163 105,174" stroke="rgba(210,235,255,0.5)" stroke-width="6" stroke-linecap="round" fill="none"/>
-        <path d="M155,149 Q163,168 155,180" stroke="rgba(210,235,255,0.5)" stroke-width="6" stroke-linecap="round" fill="none"/>
-        <path d="M210,149 Q216,163 209,174" stroke="rgba(210,235,255,0.5)" stroke-width="5" stroke-linecap="round" fill="none"/>
-        <path d="M248,149 Q253,160 248,170" stroke="rgba(210,235,255,0.5)" stroke-width="5" stroke-linecap="round" fill="none"/>
-        <!-- hearts on tier 2 -->
-        <path d="M122,163 C122,160 125,158 127,160 C129,158 132,160 132,163 C132,167 127,171 127,171 C127,171 122,167 122,163Z" fill="rgba(230,140,200,0.65)"/>
-        <path d="M165,159 C165,156 168,154 170,156 C172,154 175,156 175,159 C175,163 170,167 170,167 C170,167 165,163 165,159Z" fill="rgba(230,140,200,0.65)"/>
-        <path d="M208,163 C208,160 211,158 213,160 C215,158 218,160 218,163 C218,167 213,171 213,171 C213,171 208,167 208,163Z" fill="rgba(230,140,200,0.65)"/>
+        <!-- cake gradients -->
+        <linearGradient id="tier3grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#243f96"/>
+          <stop offset="100%" stop-color="#101a4d"/>
+        </linearGradient>
 
-        <!-- ── TIER 1 (top) ── -->
-        <rect x="107" y="88" width="126" height="50" rx="6" fill="url(#tier1grad)"/>
-        <rect x="107" y="88" width="6" height="50" rx="3" fill="rgba(255,255,255,0.05)"/>
-        <rect x="107" y="82" width="126" height="13" rx="5" fill="url(#frostgrad)"/>
-        <!-- drips -->
-        <path d="M130,95 Q136,108 130,117" stroke="rgba(210,235,255,0.5)" stroke-width="5" stroke-linecap="round" fill="none"/>
-        <path d="M168,95 Q175,112 168,121" stroke="rgba(210,235,255,0.5)" stroke-width="6" stroke-linecap="round" fill="none"/>
-        <path d="M208,95 Q213,107 208,117" stroke="rgba(210,235,255,0.5)" stroke-width="5" stroke-linecap="round" fill="none"/>
-        <!-- tiny stars top tier -->
-        <polygon points="145,108 146,112 150,112 147,114 148,118 145,116 142,118 143,114 140,112 144,112" fill="rgba(240,216,132,0.5)"/>
-        <polygon points="195,105 196,109 200,109 197,111 198,115 195,113 192,115 193,111 190,109 194,109" fill="rgba(125,232,240,0.5)"/>
+        <linearGradient id="tier2grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#2a3f91"/>
+          <stop offset="100%" stop-color="#16225f"/>
+        </linearGradient>
 
-        <!-- ══ CANDLES ══ -->
-        <!-- Candle 0 — purple -->
-        <g class="candle-group" id="candleGroup0" data-candle="0" style="cursor:none">
-          <rect x="117" y="60" width="12" height="24" rx="3" fill="url(#candle1grad)"/>
-          <rect x="117" y="60" width="12" height="6" rx="3" fill="rgba(255,255,255,0.2)"/>
-          <line x1="123" y1="60" x2="123" y2="55" stroke="#d4b890" stroke-width="1.5" stroke-linecap="round"/>
-          <g class="flame-group" id="flame0" filter="url(#candleGlow)">
-            <ellipse cx="123" cy="48" rx="7" ry="9" fill="url(#flame0grad)" opacity="0.85" class="flame-outer"/>
-            <ellipse cx="123" cy="51" rx="3.5" ry="5.5" fill="url(#flame2grad)" class="flame-inner"/>
-            <ellipse cx="123" cy="53" rx="1.5" ry="2.2" fill="white" opacity="0.85" class="flame-core"/>
-          </g>
+        <linearGradient id="tier1grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#3348a1"/>
+          <stop offset="100%" stop-color="#1b2761"/>
+        </linearGradient>
+
+        <!-- frosting -->
+        <linearGradient id="frostgrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#eef7ff"/>
+          <stop offset="100%" stop-color="#a7cdf4"/>
+        </linearGradient>
+
+        <!-- icing shine -->
+        <linearGradient id="icingShine" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="rgba(255,255,255,0.8)"/>
+          <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+        </linearGradient>
+
+        <!-- candles -->
+        <linearGradient id="candle1grad">
+          <stop offset="0%" stop-color="#d880e8"/>
+          <stop offset="100%" stop-color="#8c42ba"/>
+        </linearGradient>
+
+        <linearGradient id="candle2grad">
+          <stop offset="0%" stop-color="#74e3ff"/>
+          <stop offset="100%" stop-color="#2c9ac4"/>
+        </linearGradient>
+
+        <linearGradient id="candle3grad">
+          <stop offset="0%" stop-color="#ffe27c"/>
+          <stop offset="100%" stop-color="#d7a22f"/>
+        </linearGradient>
+
+        <linearGradient id="candle4grad">
+          <stop offset="0%" stop-color="#ff98b6"/>
+          <stop offset="100%" stop-color="#d94f78"/>
+        </linearGradient>
+
+        <linearGradient id="candle5grad">
+          <stop offset="0%" stop-color="#98ffbe"/>
+          <stop offset="100%" stop-color="#42b66a"/>
+        </linearGradient>
+
+        <!-- flames -->
+        <radialGradient id="flame0grad">
+          <stop offset="0%" stop-color="#fff4c2"/>
+          <stop offset="60%" stop-color="#ffb100"/>
+          <stop offset="100%" stop-color="#ff4d00" stop-opacity="0"/>
+        </radialGradient>
+
+        <radialGradient id="flameBlue">
+          <stop offset="0%" stop-color="#d7f3ff"/>
+          <stop offset="60%" stop-color="#4f8cff"/>
+          <stop offset="100%" stop-color="#0020aa" stop-opacity="0"/>
+        </radialGradient>
+
+        <!-- glow -->
+        <filter id="candleGlow">
+          <feGaussianBlur stdDeviation="4" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+
+      </defs>
+
+      <!-- magical glow -->
+      <ellipse
+        cx="170"
+        cy="170"
+        rx="120"
+        ry="90"
+        fill="rgba(100,140,255,0.15)"
+        filter="url(#candleGlow)"
+      />
+
+      <!-- plate shadow -->
+      <ellipse
+        cx="170"
+        cy="280"
+        rx="128"
+        ry="12"
+        fill="rgba(0,0,30,0.5)"
+      />
+
+      <!-- ✦ bottom tier -->
+      <rect
+        x="40"
+        y="202"
+        width="260"
+        height="68"
+        rx="10"
+        fill="url(#tier3grad)"
+        stroke="rgba(255,255,255,0.08)"
+        stroke-width="1.5"
+      />
+
+      <rect
+        x="40"
+        y="196"
+        width="260"
+        height="14"
+        rx="8"
+        fill="url(#frostgrad)"
+      />
+
+      <rect
+        x="60"
+        y="198"
+        width="180"
+        height="4"
+        rx="4"
+        fill="url(#icingShine)"
+        opacity="0.6"
+      />
+
+      <!-- frosting drips -->
+      <path d="M75,210 Q80,226 75,238"
+        stroke="rgba(225,240,255,0.7)"
+        stroke-width="7"
+        stroke-linecap="round"
+        fill="none"/>
+
+      <path d="M120,210 Q128,230 121,244"
+        stroke="rgba(225,240,255,0.7)"
+        stroke-width="6"
+        stroke-linecap="round"
+        fill="none"/>
+
+      <path d="M172,210 Q179,232 172,244"
+        stroke="rgba(225,240,255,0.7)"
+        stroke-width="7"
+        stroke-linecap="round"
+        fill="none"/>
+
+      <path d="M224,210 Q231,228 224,240"
+        stroke="rgba(225,240,255,0.7)"
+        stroke-width="6"
+        stroke-linecap="round"
+        fill="none"/>
+
+      <!-- decorations -->
+      <circle cx="100" cy="228" r="3" fill="rgba(140,220,255,0.7)"/>
+      <circle cx="150" cy="240" r="3" fill="rgba(255,180,230,0.6)"/>
+      <circle cx="200" cy="228" r="3" fill="rgba(255,220,120,0.7)"/>
+      <circle cx="245" cy="238" r="3" fill="rgba(140,220,255,0.7)"/>
+
+      <!-- ✦ middle tier -->
+      <rect
+        x="76"
+        y="142"
+        width="188"
+        height="58"
+        rx="8"
+        fill="url(#tier2grad)"
+        stroke="rgba(255,255,255,0.08)"
+        stroke-width="1.5"
+      />
+
+      <rect
+        x="76"
+        y="136"
+        width="188"
+        height="13"
+        rx="6"
+        fill="url(#frostgrad)"
+      />
+
+      <rect
+        x="90"
+        y="138"
+        width="120"
+        height="4"
+        rx="4"
+        fill="url(#icingShine)"
+        opacity="0.6"
+      />
+
+      <!-- middle tier hearts -->
+      <text x="120" y="173" fill="#ffb7d7" opacity="0.8">♡</text>
+      <text x="165" y="168" fill="#ffb7d7" opacity="0.8">♡</text>
+      <text x="208" y="173" fill="#ffb7d7" opacity="0.8">♡</text>
+
+      <!-- ✦ top tier -->
+      <rect
+        x="107"
+        y="88"
+        width="126"
+        height="50"
+        rx="8"
+        fill="url(#tier1grad)"
+        stroke="rgba(255,255,255,0.08)"
+        stroke-width="1.5"
+      />
+
+      <rect
+        x="107"
+        y="82"
+        width="126"
+        height="13"
+        rx="6"
+        fill="url(#frostgrad)"
+      />
+
+      <rect
+        x="120"
+        y="84"
+        width="70"
+        height="3"
+        rx="3"
+        fill="url(#icingShine)"
+        opacity="0.7"
+      />
+
+      <!-- top stars -->
+      <text x="142" y="115" fill="#ffe89a" opacity="0.8">✦</text>
+      <text x="192" y="110" fill="#aee8ff" opacity="0.8">✦</text>
+
+      <!-- ═══ candles ═══ -->
+
+      <!-- purple -->
+      <g class="candle-group">
+        <rect x="117" y="60" width="12" height="24" rx="3" fill="url(#candle1grad)"/>
+        <rect x="117" y="60" width="12" height="5" rx="3" fill="rgba(255,255,255,0.25)"/>
+        <line x1="123" y1="60" x2="123" y2="54"
+          stroke="#d6bc92"
+          stroke-width="1.5"/>
+
+        <g class="flame-group" filter="url(#candleGlow)">
+          <ellipse cx="123" cy="48" rx="7" ry="9"
+            fill="url(#flame0grad)"/>
+          <ellipse cx="123" cy="51" rx="3" ry="5"
+            fill="#fff0b0"/>
+          <ellipse cx="123" cy="53" rx="1.5" ry="2"
+            fill="white"/>
         </g>
+      </g>
 
-        <!-- Candle 1 — cyan -->
-        <g class="candle-group" id="candleGroup1" data-candle="1" style="cursor:none">
-          <rect x="139" y="56" width="12" height="28" rx="3" fill="url(#candle2grad)"/>
-          <rect x="139" y="56" width="12" height="6" rx="3" fill="rgba(255,255,255,0.2)"/>
-          <line x1="145" y1="56" x2="145" y2="51" stroke="#d4b890" stroke-width="1.5" stroke-linecap="round"/>
-          <g class="flame-group" id="flame1" filter="url(#candleGlow)">
-            <ellipse cx="145" cy="44" rx="7" ry="9" fill="url(#flame1grad)" opacity="0.85" class="flame-outer"/>
-            <ellipse cx="145" cy="47" rx="3.5" ry="5.5" fill="url(#flame2grad)" class="flame-inner"/>
-            <ellipse cx="145" cy="49" rx="1.5" ry="2.2" fill="white" opacity="0.85" class="flame-core"/>
-          </g>
+      <!-- cyan -->
+      <g class="candle-group">
+        <rect x="139" y="56" width="12" height="28" rx="3" fill="url(#candle2grad)"/>
+        <rect x="139" y="56" width="12" height="5" rx="3" fill="rgba(255,255,255,0.25)"/>
+        <line x1="145" y1="56" x2="145" y2="50"
+          stroke="#d6bc92"
+          stroke-width="1.5"/>
+
+        <g class="flame-group" filter="url(#candleGlow)">
+          <ellipse cx="145" cy="44" rx="7" ry="9"
+            fill="url(#flameBlue)"/>
+          <ellipse cx="145" cy="47" rx="3" ry="5"
+            fill="#fff0b0"/>
+          <ellipse cx="145" cy="49" rx="1.5" ry="2"
+            fill="white"/>
         </g>
+      </g>
 
-        <!-- Candle 2 — gold (centre, tallest) -->
-        <g class="candle-group" id="candleGroup2" data-candle="2" style="cursor:none">
-          <rect x="162" y="50" width="14" height="34" rx="3" fill="url(#candle3grad)"/>
-          <rect x="162" y="50" width="14" height="7" rx="3" fill="rgba(255,255,255,0.2)"/>
-          <line x1="169" y1="50" x2="169" y2="44" stroke="#d4b890" stroke-width="1.5" stroke-linecap="round"/>
-          <g class="flame-group" id="flame2" filter="url(#candleGlow)">
-            <ellipse cx="169" cy="37" rx="8" ry="11" fill="url(#flame2grad)" opacity="0.9" class="flame-outer"/>
-            <ellipse cx="169" cy="40" rx="4" ry="6.5" fill="url(#flame2grad)" class="flame-inner"/>
-            <ellipse cx="169" cy="43" rx="2" ry="2.8" fill="white" opacity="0.9" class="flame-core"/>
-          </g>
+      <!-- gold -->
+      <g class="candle-group">
+        <rect x="162" y="50" width="14" height="34" rx="3" fill="url(#candle3grad)"/>
+        <rect x="162" y="50" width="14" height="6" rx="3" fill="rgba(255,255,255,0.25)"/>
+        <line x1="169" y1="50" x2="169" y2="43"
+          stroke="#d6bc92"
+          stroke-width="1.5"/>
+
+        <g class="flame-group" filter="url(#candleGlow)">
+          <ellipse cx="169" cy="37" rx="8" ry="11"
+            fill="url(#flame0grad)"/>
+          <ellipse cx="169" cy="40" rx="4" ry="6"
+            fill="#fff0b0"/>
+          <ellipse cx="169" cy="43" rx="2" ry="2.5"
+            fill="white"/>
         </g>
+      </g>
 
-        <!-- Candle 3 — pink -->
-        <g class="candle-group" id="candleGroup3" data-candle="3" style="cursor:none">
-          <rect x="187" y="56" width="12" height="28" rx="3" fill="url(#candle4grad)"/>
-          <rect x="187" y="56" width="12" height="6" rx="3" fill="rgba(255,255,255,0.2)"/>
-          <line x1="193" y1="56" x2="193" y2="51" stroke="#d4b890" stroke-width="1.5" stroke-linecap="round"/>
-          <g class="flame-group" id="flame3" filter="url(#candleGlow)">
-            <ellipse cx="193" cy="44" rx="7" ry="9" fill="url(#flame3grad)" opacity="0.85" class="flame-outer"/>
-            <ellipse cx="193" cy="47" rx="3.5" ry="5.5" fill="url(#flame2grad)" class="flame-inner"/>
-            <ellipse cx="193" cy="49" rx="1.5" ry="2.2" fill="white" opacity="0.85" class="flame-core"/>
-          </g>
+      <!-- pink -->
+      <g class="candle-group">
+        <rect x="187" y="56" width="12" height="28" rx="3" fill="url(#candle4grad)"/>
+        <rect x="187" y="56" width="12" height="5" rx="3" fill="rgba(255,255,255,0.25)"/>
+        <line x1="193" y1="56" x2="193" y2="50"
+          stroke="#d6bc92"
+          stroke-width="1.5"/>
+
+        <g class="flame-group" filter="url(#candleGlow)">
+          <ellipse cx="193" cy="44" rx="7" ry="9"
+            fill="url(#flame0grad)"/>
+          <ellipse cx="193" cy="47" rx="3" ry="5"
+            fill="#fff0b0"/>
+          <ellipse cx="193" cy="49" rx="1.5" ry="2"
+            fill="white"/>
         </g>
+      </g>
 
-        <!-- Candle 4 — green -->
-        <g class="candle-group" id="candleGroup4" data-candle="4" style="cursor:none">
-          <rect x="209" y="60" width="12" height="24" rx="3" fill="url(#candle5grad)"/>
-          <rect x="209" y="60" width="12" height="6" rx="3" fill="rgba(255,255,255,0.2)"/>
-          <line x1="215" y1="60" x2="215" y2="55" stroke="#d4b890" stroke-width="1.5" stroke-linecap="round"/>
-          <g class="flame-group" id="flame4" filter="url(#candleGlow)">
-            <ellipse cx="215" cy="48" rx="7" ry="9" fill="url(#flame4grad)" opacity="0.85" class="flame-outer"/>
-            <ellipse cx="215" cy="51" rx="3.5" ry="5.5" fill="url(#flame2grad)" class="flame-inner"/>
-            <ellipse cx="215" cy="53" rx="1.5" ry="2.2" fill="white" opacity="0.85" class="flame-core"/>
-          </g>
+      <!-- green -->
+      <g class="candle-group">
+        <rect x="209" y="60" width="12" height="24" rx="3" fill="url(#candle5grad)"/>
+        <rect x="209" y="60" width="12" height="5" rx="3" fill="rgba(255,255,255,0.25)"/>
+        <line x1="215" y1="60" x2="215" y2="54"
+          stroke="#d6bc92"
+          stroke-width="1.5"/>
+
+        <g class="flame-group" filter="url(#candleGlow)">
+          <ellipse cx="215" cy="48" rx="7" ry="9"
+            fill="url(#flame0grad)"/>
+          <ellipse cx="215" cy="51" rx="3" ry="5"
+            fill="#fff0b0"/>
+          <ellipse cx="215" cy="53" rx="1.5" ry="2"
+            fill="white"/>
         </g>
-      </svg>
+      </g>
 
-      <!-- Counter & wish prompt -->
-      <div class="candle-hud">
-        <div class="candle-counter" id="candleCounter">
-          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" width="16" height="16">
-            <line x1="10" y1="2" x2="10" y2="10"/>
-            <path d="M6,8 C6,6 8,4 10,6 C12,4 14,6 14,8 C14,11 10,14 10,14 C10,14 6,11 6,8Z"/>
-          </svg>
-          <span id="candleCountText">5 candles to blow out</span>
-        </div>
+      <!-- sparkles -->
+      <circle cx="70" cy="80" r="2" fill="#dff6ff" opacity="0.8"/>
+      <circle cx="280" cy="60" r="2" fill="#dff6ff" opacity="0.8"/>
+      <circle cx="300" cy="170" r="2" fill="#dff6ff" opacity="0.8"/>
+      <circle cx="45" cy="180" r="1.8" fill="#dff6ff" opacity="0.8"/>
+      <circle cx="170" cy="20" r="2" fill="#dff6ff" opacity="0.8"/>
 
-        <div class="wish-prompt" id="wishPrompt">
-          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-            <polygon points="16,3 19,12 29,12 21,18 24,28 16,22 8,28 11,18 3,12 13,12" fill="#f0d884"/>
-            <polygon points="16,7 18,13 24,13 19,17 21,23 16,19 11,23 13,17 8,13 14,13" fill="rgba(255,255,255,0.3)"/>
-          </svg>
-          <p class="wish-text">Close your eyes &amp; make a wish.</p>
-          <p class="wish-sub">The stars heard you &amp; they will make sure to make it come true, puppy.</p>
-        </div>
+      <!-- floating symbols -->
+      <text x="55" y="55" fill="rgba(255,255,255,0.7)">✦</text>
+      <text x="275" y="110" fill="rgba(255,210,240,0.7)">♡</text>
+      <text x="45" y="145" fill="rgba(255,255,255,0.7)">✧</text>
+
+    </svg>
+
+    <!-- hud -->
+    <div class="candle-hud">
+
+      <div class="candle-counter">
+        <span id="candleCountText">5 candles to blow out</span>
       </div>
+
+      <div class="wish-prompt">
+        <p class="wish-text">
+          close your eyes &amp; make a wish ✧
+        </p>
+
+        <p class="wish-sub">
+          the stars heard you &amp; they will make sure it comes true, puppy ♡
+        </p>
+      </div>
+
     </div>
-  </section>
+
+  </div>
+</section>
 
   <!-- ══════════════════════════════════
       wishhh cards
