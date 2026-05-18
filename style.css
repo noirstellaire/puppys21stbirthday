@@ -1,5 +1,5 @@
 /* ============================================================
-   JAMIE'S BIRTHDAY UNIVERSE — style.css
+   jamie is so old what the helly — style.css
    ============================================================ */
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -62,7 +62,7 @@ body::after {
 }
 #confettiCanvas { z-index: 9997; }
 
-/* ── MUSIC TOGGLE ── */
+/* ── music ── */
 .music-toggle {
   position: fixed; top: 1.4rem; right: 1.4rem; z-index: 1000;
   background: rgba(8,18,50,0.75);
@@ -86,7 +86,7 @@ body::after {
 @keyframes musicPulse { 0%,100%{opacity:1} 50%{opacity:0.45} }
 
 /* ══════════════════════════════════════════
-   HERO
+   herooo
 ══════════════════════════════════════════ */
 .hero {
   position: relative; min-height: 100vh;
@@ -189,13 +189,12 @@ body::after {
 @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(7px)} }
 
 /* ══════════════════════════════════════════
-   CAKE SECTION
+   cakeeeee
 ══════════════════════════════════════════ */
 .cake-section {
   padding: var(--section-pad) clamp(1rem,5vw,4rem);
   position: relative; overflow: hidden;
 }
-/* Subtle birthday-gradient horizon */
 .cake-section::before {
   content: '';
   position: absolute; inset: 0;
@@ -215,16 +214,13 @@ body::after {
   filter: drop-shadow(0 0 30px rgba(60,30,160,0.5)) drop-shadow(0 20px 40px rgba(0,0,30,0.6));
   transition: filter 0.5s;
 }
-/* Brighter when candles are going out */
 .cake-svg.brightened {
   filter: drop-shadow(0 0 50px rgba(240,210,100,0.55)) drop-shadow(0 0 80px rgba(125,232,240,0.3));
 }
 
-/* Candle hover hint */
 .candle-group { cursor: none; transition: transform 0.15s; }
 .candle-group:hover { transform: scale(1.08); }
 
-/* Flame animations */
 .flame-group { transform-origin: center bottom; animation: flicker 0.8s ease-in-out infinite alternate; }
 .flame-group:nth-child(1) { animation-delay: 0s; }
 .flame-group:nth-child(2) { animation-delay: 0.15s; }
@@ -243,7 +239,6 @@ body::after {
   opacity: 0 !important;
   transition: opacity 0.6s ease;
 }
-/* Smoke puff when flame dies */
 .smoke-puff {
   position: absolute;
   width: 6px; height: 6px;
@@ -257,7 +252,6 @@ body::after {
   100% { transform: translate(var(--sx,0px), -40px) scale(3); opacity: 0; }
 }
 
-/* HUD below cake */
 .candle-hud {
   display: flex; flex-direction: column; align-items: center; gap: 1rem;
   min-height: 120px;
@@ -273,7 +267,6 @@ body::after {
 }
 .candle-counter svg { stroke: var(--gold-dim); flex-shrink: 0; }
 
-/* Wish prompt — hidden until all candles out */
 .wish-prompt {
   text-align: center; opacity: 0; pointer-events: none;
   transform: translateY(16px) scale(0.95);
@@ -293,7 +286,7 @@ body::after {
 }
 
 /* ══════════════════════════════════════════
-   SECTION HEADERS (shared)
+   headers
 ══════════════════════════════════════════ */
 .section-header { text-align: center; margin-bottom: clamp(2.5rem,6vw,4.5rem); }
 
@@ -309,7 +302,7 @@ body::after {
 }
 
 /* ══════════════════════════════════════════
-   WISH CARDS
+  wish cards
 ══════════════════════════════════════════ */
 .wishes {
   padding: var(--section-pad) clamp(1rem,5vw,4rem);
@@ -365,7 +358,7 @@ body::after {
 }
 
 /* ══════════════════════════════════════════
-   INTERACTIVE STARS SECTION
+   interactive stars
 ══════════════════════════════════════════ */
 .stars-section {
   padding: var(--section-pad) clamp(1rem,5vw,4rem);
@@ -461,7 +454,7 @@ body::after {
 .popup-close svg { fill: currentColor; }
 
 /* ══════════════════════════════════════════
-   FINAL SECTION
+   final
 ══════════════════════════════════════════ */
 .final-section {
   position: relative; min-height: 100vh;
@@ -524,12 +517,12 @@ body::after {
 @keyframes iconPulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.28)} }
 
 /* ══════════════════════════════════════════
-   UTILITIES
+   utilit
 ══════════════════════════════════════════ */
 @keyframes fadeUp { from{opacity:0;transform:translateY(26px)} to{opacity:1;transform:none} }
 
 /* ══════════════════════════════════════════
-   RESPONSIVE
+   resp
 ══════════════════════════════════════════ */
 @media (max-width: 640px) {
   .wishes-grid { grid-template-columns: 1fr; }
@@ -539,7 +532,7 @@ body::after {
 }
 
 /* ══════════════════════════════════════════
-   SCROLLBAR
+  scroll
 ══════════════════════════════════════════ */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--deep-space); }
