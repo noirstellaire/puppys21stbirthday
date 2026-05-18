@@ -1,9 +1,9 @@
 /* ============================================================
-   JAMIE'S BIRTHDAY UNIVERSE — script.js
+   for da bday boy — script.js
    ============================================================ */
 
 /* ─────────────────────────────────────
-   1. CURSOR TRAIL
+   1. cursor shenanigans n other sparkless
 ───────────────────────────────────── */
 (function initCursorTrail() {
   const canvas = document.getElementById('cursorCanvas');
@@ -57,7 +57,7 @@
 
 
 /* ─────────────────────────────────────
-   2. HERO STARFIELD
+   2. hero starfield <3
 ───────────────────────────────────── */
 (function initStarfield() {
   const canvas = document.getElementById('starfield');
@@ -120,7 +120,7 @@
 
 
 /* ─────────────────────────────────────
-   3. FLOATING PARTICLES (hero)
+   3. floating lil particless
 ───────────────────────────────────── */
 (function initParticles() {
   const field = document.getElementById('particleField');
@@ -142,7 +142,7 @@
 
 
 /* ─────────────────────────────────────
-   4. SCROLL REVEAL — WISH CARDS
+   4. scroll for wish cards
 ───────────────────────────────────── */
 (function initScrollReveal() {
   const cards = document.querySelectorAll('.wish-card');
@@ -160,7 +160,7 @@
 
 
 /* ─────────────────────────────────────
-   5. BIRTHDAY CAKE — INTERACTIVE CANDLES
+   5. interactive candfles :p u better work hmpf
 ───────────────────────────────────── */
 (function initCake() {
   const cakeSvg       = document.getElementById('cakeSvg');
@@ -172,7 +172,7 @@
 
   let lit = 5;  // candles still burning
 
-  // Resize confetti canvas
+  // resize confetti canvas
   function resizeConfetti() {
     confettiCanvas.width  = window.innerWidth;
     confettiCanvas.height = window.innerHeight;
@@ -180,7 +180,7 @@
   resizeConfetti();
   window.addEventListener('resize', resizeConfetti);
 
-  // Hook each candle group
+  // hook each candle group
   for (let i = 0; i < 5; i++) {
     const group = document.getElementById(`candleGroup${i}`);
     const flame = document.getElementById(`flame${i}`);
@@ -189,18 +189,18 @@
     group.addEventListener('click', () => {
       if (flame.classList.contains('extinguished')) return; // already out
 
-      // 1. Extinguish the flame
+      // 1. extinguish the flame
       flame.classList.add('extinguished');
       lit--;
 
-      // 2. Spawn smoke puff over the flame
+      // 2. spawn smoke puff over the flame
       spawnSmoke(group, i);
 
-      // 3. Update counter text
+      // 3. update counter text
       if (lit > 0) {
         countText.textContent = `${lit} candle${lit === 1 ? '' : 's'} left to blow out`;
       } else {
-        // All done!
+        // all done!
         counterEl.style.opacity = '0';
         wishPrompt.classList.add('visible');
         cakeSvg.classList.add('brightened');
@@ -209,9 +209,9 @@
     });
   }
 
-  // Smoke puff helper — appended relative to cakeScene
+  // smoke puff helper or whtvr
   function spawnSmoke(candleGroup, index) {
-    // Flame approximate SVG positions (centre x, top y) for each candle index
+    // flame svg positions etc
     const positions = [
       { x: 123, y: 39 },
       { x: 145, y: 35 },
@@ -245,7 +245,7 @@
     }
   }
 
-  // ── CONFETTI ──
+  // ── confetti yippieeee ──
   let confettiPieces = [];
   let confettiRunning = false;
 
@@ -305,7 +305,7 @@
 
 
 /* ─────────────────────────────────────
-   6. INTERACTIVE FLOATING STARS
+   6. floating stars
 ───────────────────────────────────── */
 (function initFloatingStars() {
   const container = document.getElementById('floatingStars');
@@ -314,35 +314,34 @@
   const closeBtn  = document.getElementById('popupClose');
 
   const messages = [
-    // Compliments
+    // compliments
     "You have the most contagious laugh in any galaxy I've ever explored.",
-    "You're ridiculously talented. Like, annoyingly so. I'm proud of you every single day.",
-    "Your kindness is genuinely one of the rarest things in the universe. I hope you know that.",
-    "You are so much smarter than you give yourself credit for. I see it even when you don't.",
-    "The way you love people — fully, quietly, consistently — it's extraordinary.",
-    // Inside jokes / cute
-    "Achievement unlocked: surviving another year of my terrible jokes.",
-    "You still make my stomach do that weird flip thing. Even now. Especially now.",
-    "Certified galaxy-brain. Also certified blanket thief. Both equally true.",
-    "Secret message from the stars: I think about you embarrassingly often.",
-    "You are my favourite person to do absolutely nothing with.",
-    // Fake achievements
+    "You are so intelligent in ways that don't need proving. Your brain is full of constellations; it shows in how you listen, how you notice, how you understand people.",
+    "There is something beautifully infinite about you. Like no matter how many years pass, there will always be more of you left to adore.",
+    "And after all these years, I still look at you the same way people look at the night sky — overwhelmed that something so beautiful exists at all.",
+    "There is something so attractive about the way you get passionate when explaining something you love. Your whole soul lights up like a collapsing star being born again.",
+    // inside jokes 
+    "Breaking news: local boy remains devastatingly charming despite the passage of time.",
+    "You still make the butterflies in my stomach flutter, do you know that? Hmpf.",
+    "The stars are getting jealous again. Please tone it down a little, thanks.",
+    "You're lucky you're cute because honestly the nonsense you say sometimes is unbelievable.",
+    "The universe gave you big beautiful eyes and then made you unbearably cheeky just to balance things out.",
+    // achievements
     "Rare Achievement — 'Chosen One': selected by the cosmos to be inexplicably amazing.",
-    "Legendary Status — 'Gravity Well': everyone in the room naturally orbits you.",
     "Secret Trophy — 'The Warmth': awarded to the person who makes others feel safe just by being nearby.",
     "Achievement — 'Light Year': your presence alone travels far. People feel it long after you've left a room.",
     "Gold Star — 'The One': as in, the one I'd search every universe for.",
-    // Emotional
-    "Somewhere a long time ago, the universe decided to put you here. I'm grateful for it every single day.",
-    "You are loved in the present tense. Not 'will be' or 'used to be.' Right now. Always right now.",
+    // emotional
+    "You are every proof I've ever needed that soulmates are real.",
+    "I think a part of me will always belong to the sound of your voice reading Alice in Wonderland to me in the dark. I don't even know how to explain what that meant to my heart.",
     "Being with you feels like coming home to a place I didn't know I was missing.",
-    "You make this life feel like something worth showing up for.",
+    "You have loved me so gently that sometimes I forget the world can be cruel at all.",
     "I don't know what I did to get to be the person who knows you. But I'm so glad I did it.",
   ];
 
   const shuffled = [...messages].sort(() => Math.random() - 0.5);
 
-  // Star SVG shapes alternating size/style
+  // star shapes etcc
   function makeStarSVG(i) {
     const size = 28 + Math.random() * 22;
     const isAlt = i % 3 === 0;
@@ -401,7 +400,7 @@
 
 
 /* ─────────────────────────────────────
-   7. FINAL SECTION — GATHERING STARS
+   7. gathering srars
 ───────────────────────────────────── */
 (function initFinalSection() {
   const section = document.getElementById('finalSection');
@@ -468,7 +467,7 @@
 
 
 /* ─────────────────────────────────────
-   8. MUSIC TOGGLE
+   8. music :pp
 ───────────────────────────────────── */
 (function initMusic() {
   const btn   = document.getElementById('musicToggle');
@@ -499,7 +498,7 @@
 
 
 /* ─────────────────────────────────────
-   9. SMOOTH SCROLL
+   9. smooth scroll wow
 ───────────────────────────────────── */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
